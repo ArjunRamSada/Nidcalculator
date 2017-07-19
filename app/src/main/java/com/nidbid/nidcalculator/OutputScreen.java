@@ -12,7 +12,6 @@ public class OutputScreen extends AppCompatActivity {
 
     private TextView OUTTEXT;
     private Button BTMAIN, BTBACK;
-    private String OutString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
