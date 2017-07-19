@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nidbid.nidcalculator.InputScreen">
+
+    <EditText
+        android:id="@+id/INUM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:ems="10"
+        android:hint="Number 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/INUM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Number 2"
+        android:inputType="number"
+        android:layout_below="@+id/INUM1"
+        android:layout_alignStart="@+id/INUM1" />
+
+    <CheckBox
+        android:id="@+id/CBADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Add (+)"
+        android:layout_below="@+id/INUM2"
+        android:layout_alignStart="@+id/CBSUB"
+        android:layout_alignEnd="@+id/CBSUB" />
+
+    <CheckBox
+        android:id="@+id/CBSUB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBADD"
+        android:text="Sub (-)"
+        android:layout_alignStart="@+id/CBMOD"
+        android:layout_alignEnd="@+id/CBMOD" />
+
+    <CheckBox
+        android:id="@+id/CBMUL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CBSUB"
+        android:layout_below="@+id/CBSUB"
+        android:text="Mul (*)"
+        android:layout_alignEnd="@+id/CBSUB" />
+
+    <CheckBox
+        android:id="@+id/CBDIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBMUL"
+        android:text="Div (/)"
+        android:layout_alignStart="@+id/CBMUL"
+        android:layout_alignEnd="@+id/CBMOD" />
+
+    <CheckBox
+        android:id="@+id/CBMOD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CBDIV"
+        android:layout_centerHorizontal="true"
+        android:text="Mod (%)" />
+
+    <Button
+        android:id="@+id/BTDON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/INUM2"
+        android:layout_alignStart="@+id/INUM2"
+        android:layout_below="@+id/CBMOD"
+        android:layout_marginTop="22dp"
+        android:text="SUBMIT" />
+</RelativeLayout>
